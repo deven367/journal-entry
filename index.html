@@ -11,7 +11,7 @@
       #entry{
         padding: 0;
         height: 500px;
-        width: 50%;
+        width: 35%;
         position: relative;
         left: 0;
         outline: none;
@@ -19,7 +19,24 @@
         border-color: rgba(0,0,0,.85);
         background-color: white;
         font-size: 16px;
+        /* align-self: center; */
+      }
+      textarea{
         align-self: center;
+        /* text-align: center; */
+      }
+      body{
+        background-color: rgba(100,100,100,.2);
+      }
+      .submit{
+        border-radius: 25px;
+        width: 100px;
+
+      }
+      input: hover{
+        background-color: green;
+        cursor: pointer;
+      }
       }
     </style>
 
@@ -28,11 +45,19 @@
     <form method="post" onsubmit="myFunction()" >
     <!-- <form method="post" onsubmit="WriteToFile(this)" > -->
       <!-- action="upload.php"   -->
-      <center><input type="date" id="date" ></center>
-      <legend><center>Journal Entry</center>
-          <center><textarea id = "entry" placeholder=" How was your day?"></textarea>
-        </legend>
-      <center><input type="submit" value="Make Entry" ></center>
+      <div class="date_sec">
+          <center><input type="date" id="date" ></center>
+      </div>
+
+      <div class="txtarea">
+        <center>Journal Entry</center>
+        <center><textarea id = "entry" placeholder=" How was your day?"></textarea>
+      </div>
+
+      <div class="submit-btn">
+          <center><input class = "submit" type="submit" value="Make Entry" ></center>
+      </div>
+
     </form>
 
   </body>
