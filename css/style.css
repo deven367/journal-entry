@@ -20,7 +20,7 @@ nav ul{
   text-decoration: none;
   list-style: none;
   margin-right: 20px;
-
+  margin-top: auto;
 }
 nav ul li{
   display: inline-block;
