@@ -3,62 +3,69 @@
   <head>
     <meta charset="utf-8">
     <script src="script.js" defer ></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="quotes.json"></script>
     <title>Journal Entry</title>
     <style>
-      #date{
-
-      }
-      #entry{
-        padding: 0;
-        height: 500px;
-        width: 35%;
-        position: relative;
-        left: 0;
-        outline: none;
-        border: 1px solid #cdcdcd;
-        border-color: rgba(0,0,0,.85);
-        background-color: white;
-        font-size: 16px;
-        /* align-self: center; */
-      }
-      textarea{
-        align-self: center;
-        /* text-align: center; */
-      }
-      body{
-        background-color: rgba(100,100,100,.2);
-      }
-      .submit{
-        border-radius: 25px;
-        width: 100px;
-
-      }
-      input: hover{
-        background-color: green;
-        cursor: pointer;
-      }
-      }
     </style>
 
   </head>
   <body>
-    <form method="post" onsubmit="myFunction()" >
-    <!-- <form method="post" onsubmit="WriteToFile(this)" > -->
-      <!-- action="upload.php"   -->
-      <div class="date_sec">
-          <center><input type="date" id="date" ></center>
-      </div>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a href="index.html" class="pull-left visible-md visible-lg"></a>
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Journal Entry</h1></a>
+            </div>
+          </div>
+          <ul class="navbar-right">
+            <li class="nav-item"><a href="#" class="menu-items">Quotes</a></li>
+            <li class="nav-item"><a href="#" class="menu-items">Entries</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-      <div class="txtarea">
-        <center>Journal Entry</center>
-        <center><textarea id = "entry" placeholder=" How was your day?"></textarea>
-      </div>
 
-      <div class="submit-btn">
-          <center><input class = "submit" type="submit" value="Make Entry" ></center>
-      </div>
 
-    </form>
+
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="box1">
+          <div class="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <div class="json-entry">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="box2">
+            <div class="date_sec">
+                <center><input type="date" id="date" ></center>
+            </div>
+
+            <div class="txtarea">
+              <center><textarea id = "textbox" placeholder=" How was your day?"></textarea>
+            </div>
+
+            <div class="submit-btn">
+                <center><input class = "submit" type="submit" value="Make Entry" ></center>
+            </div>
+
+        </div>
+
+      </section>
+    </div>
 
   </body>
 </html>
