@@ -40,3 +40,8 @@ function WriteToFile(passForm) {
     s.writeline("-----------------------------");
     s.Close();
  }
+
+ // (function json() {
+ //   var mydata = JSON.parse(quotes);
+ //   console.log(mydata);
+ // })();
