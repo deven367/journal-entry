@@ -1,62 +1,66 @@
-p{
-  margin: 15px;
-  font-size: 15;
+body{
+  background-color: rgba(100,100,100,.2);
 }
-
 #header-nav{
   background-color: #647382;
   width: auto;
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
+header a: hover{
   text-decoration: none;
 }
-.container{
-  margin: 0;
-  padding: 0;
-  height: auto;
+/* .navbar-right{
+  float: right;
+} */
+.nav-item{
+  padding: 5px;
+  margin-bottom: auto;
 }
+nav ul{
+  /* float: right; */
+  text-decoration: none;
+  list-style: none;
+  margin-right: 20px;
 
-h1{
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  font-size: 20px;
+}
+h1, li{
   margin-left: 0 ;
   color: white;
 }
-.navbar-nav{
-  float: right;
+#date{
+
 }
-row div{
-  height: 250px;
-  width: 250px;
+#textbox{
+  padding: 0;
+  height: 500px;
+  width: 650px;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0,0,0,.85);
+  background-color: white;
+  font-size: 16px;
+  /* align-self: center; */
 }
-#div1{
-    background-color: red;
+#box2, #box1{
+  margin-top: 25px;
 }
-#div2{
-    background-color: blue;
-}
-#div3{
-    background-color: green;
+textarea{
+  margin-top: 10px;
+  align-self: center;
+  /* text-align: center; */
 }
 
-.category-tile {
-  position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 15px;
+.submit{
+  border-radius: 25px;
+  width: 100px;
+
 }
-.category-tile span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
-}
-.category-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
+input: hover{
+  background-color: green;
+  cursor: pointer;
 }
