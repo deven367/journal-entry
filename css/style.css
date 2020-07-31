@@ -8,9 +8,9 @@ body{
 header a: hover{
   text-decoration: none;
 }
-/* .navbar-right{
+.navbar-right{
   float: right;
-} */
+}
 .nav-item{
   padding: 5px;
   margin-bottom: auto;
@@ -38,8 +38,8 @@ h1, li{
 }
 #textbox{
   padding: 0;
-  height: 500px;
-  width: 650px;
+  height: 400px;
+  width: 100%;
   border: 1px solid #cdcdcd;
   border-color: rgba(0,0,0,.85);
   background-color: white;
