@@ -6,10 +6,12 @@ changeQuotes();
 function myFunction() {
   var date = document.getElementById("date").value;
   console.log(date);
-  var entry = document.getElementById("entry").value;
+  var entry = document.getElementById("textbox").value;
   console.log(entry);
-  if (date == "" || entry == ""){
-    alert("Required field missing");
+  if (date == "")
+    alert("Date missing!");
+  else if(entry == ""){
+    alert("Please make an entry!");
   }
   else{
     let data =
