@@ -1,0 +1,6 @@
+#attempt to make my first gitignore file
+
+# Ignore all ipynb files
+*.ipynb
+
+.runJupyter.bat
