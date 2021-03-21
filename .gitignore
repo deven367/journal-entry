@@ -3,4 +3,7 @@
 # Ignore all ipynb files
 *.ipynb
 
-.runJupyter.bat
+runJupyter.bat
+
+entries.xlsx
+excelwriter.py
